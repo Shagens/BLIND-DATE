@@ -1,7 +1,7 @@
-import express from "express";
-import mongoose from "mongoose";
-import Cards from "./Cards";
-import dotenv from "dotenv";
+const express = require("express");
+const mongoose = require("mongoose");
+const Cards = require("./models/Cards");
+const dotenv = require("dotenv");
 dotenv.config();
 
 // configure the app
