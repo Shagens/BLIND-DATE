@@ -1,4 +1,4 @@
-import gql from 'graphql-tag';
+import {gql} from '@apollo/client';
 
 export const LOGIN = gql`
   mutation login($email: String!, $password: String!) {
@@ -13,22 +13,21 @@ export const LOGIN = gql`
 
 
 export const ADD_ATTRIBUTES = gql`
-  mutation addAttributes($quiz: [ID]!) {
+  mutation addAttributes($quiz: listAttributes!) {
     addAttributes(quiz: $quiz) {
       entryDate
       quiz {
         _id
       name
       hobbies
-      favorite music
-      smoker/non-smoker
+      favorite_music
+      smoker
       drinker
-      favorite foods
+      favorite_foods
       books
       sports
-      gym/ no gym
-      pets
-      category {
+      gym
+      pets {
         name
       } 
       }
@@ -56,13 +55,13 @@ mutation removeAttributes($userAttributes: ID!) {
           _id
         name
         hobbies
-        favorite music
-        smoker/non-smoker
+        favorite_music
+        smoker
         drinker
-        favorite foods
+        favorite_foods
         books
         sports
-        gym/ no gym
+        gym
         pets
         quiz{
           name
