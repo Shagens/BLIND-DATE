@@ -21,7 +21,6 @@ export const QUERY_ALL_QUIZ = gql`
       name
       females
       males
-      
       category {
         name
       }
@@ -34,6 +33,7 @@ export const QUERY_CATEGORIES = gql`
   categories {
     _id
     name
+    quiz
   }
 }
 `;
