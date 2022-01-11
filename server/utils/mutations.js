@@ -47,3 +47,27 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const REMOVE_ATTRIBUTES = gql`
+mutation removeAttributes($userAttributes: ID!) {
+    removeAttributes(userAttributes:$userAttributes) {
+        entryDate
+        quiz {
+          _id
+        name
+        hobbies
+        favorite music
+        smoker/non-smoker
+        drinker
+        favorite foods
+        books
+        sports
+        gym/ no gym
+        pets
+        quiz{
+          name
+        } 
+        }
+      }
+    }
+  `;
