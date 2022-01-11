@@ -1,1 +1,2 @@
 const bye
+const goat
