@@ -126,6 +126,7 @@ import Datingcards from "./components/DatingCards";
 import io from "socket.io-client";
 import TextField from "@material-ui/core/TextField";
 import TinderCards from './TinderCards';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {
   ApolloClient,
   InMemoryCache,
@@ -138,6 +139,7 @@ const client = new ApolloClient({
   uri: "https://48p1r2roz4.sse.codesandbox.io",
   cache: new InMemoryCache(),
 });
+
 // const client = new ApolloClient({
 //   request: (operation) => {
 //     const token = localStorage.getItem('id_token')

@@ -14,8 +14,10 @@
 } */
 
 .Header {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-template-areas: "logo-nav";
+    border-bottom: 1px black;
 
 }
 .Nav {
