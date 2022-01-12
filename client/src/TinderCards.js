@@ -1,6 +1,7 @@
 import React from 'react'
 import TinderCard from "react-tinder-card";
 import "./TinderCards.css";
+import { useState } from 'react'
 function TinderCards() {
   const [people, setPeople] = useState([
   //const people = [];
