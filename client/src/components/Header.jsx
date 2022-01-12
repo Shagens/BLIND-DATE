@@ -27,7 +27,6 @@ export default function Header() {
     return (
         <header className='Header'>
             <img src={profile} className="profile"/>
-            {/* <img src= {require("../assets/cupid-pic.jpg")} className="Logo" alt="logo" /> */}
             <nav className='Nav'>
                 <a href='/'>Profile</a>
                 <a href='/'>Log In</a>
