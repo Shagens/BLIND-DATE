@@ -4,6 +4,8 @@ import io from 'socket.io-client';
 import TextField from '@material-ui/core/TextField';
 import { ApolloClient, InMemoryCache, ApolloProvider, useQuery, gql} from "@apollo/client";
 // import ChatAndSearch  from './Components/Landing/Search/ChatAndSearch';
+import TinderCard from "react-tinder-card";
+import "./TinderCards.css";
 
 const client = new ApolloClient({
   uri: 'https://48p1r2roz4.sse.codesandbox.io',
@@ -117,6 +119,7 @@ function App() {
     
   );
 }
+
 
 
 
