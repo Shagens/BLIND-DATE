@@ -21,7 +21,7 @@ const Datingcards = () => {
         <div className="datingCards">
 <div className="datingCards__container">
 {people.map((person) => (
-<Datingcard
+<Datingcards
 className="swipe"
 key={person.name}
 preventSwipe={['up', 'down']}
@@ -30,7 +30,7 @@ onCardLeftScreen={() => outOfFrame(person.name)} >
     <div style={{ backgroundImage: `url(${person.imgUrl})`}} className="card">
         <h3>{person.name}</h3>
     </div>
-</Datingcard>
+</Datingcards>
 ))}
 </div>
     </div>
