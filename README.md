@@ -12,7 +12,8 @@ React
 Node
 
 ##Demo
-![Untitled_ Jan 12, 2022 9_14 PM](https://user-images.githubusercontent.com/87277755/149253803-6047a28f-6b43-408e-b731-51b05804a376.gif)
+
+![DA2BC122-05DF-4BE7-9DD0-D7E1ACA6201B](https://user-images.githubusercontent.com/87277755/149254577-74b82375-4b23-4e1f-9bf8-42dcb706732c.png)
 
 
 ## User Story 
