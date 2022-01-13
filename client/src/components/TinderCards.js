@@ -4,6 +4,8 @@ import "./TinderCards.css";
 import { useState } from 'react'
 import Chloe from '../assets/Kameron.jpg'
 import Nikko from '../assets/Nikko.png'
+import Sarah from '../assets/Ashley.png'
+import Kegan from '../assets/Ben.png'
 
 function TinderCards() {
   const [people, setPeople] = useState([
@@ -15,7 +17,16 @@ function TinderCards() {
   {
     name: 'Khloe' ,
     pic: Chloe
-  }
+  },
+  {
+    name: 'Sarah',
+    pic: Sarah
+},
+{
+    name: 'Kegan',
+    pic: Kegan
+}
+
 ]);
     return (
         <div>
@@ -43,6 +54,7 @@ function TinderCards() {
                 </TinderCard>
             ))}
             </div>
+            <div id='Height'></div>
 
         </div>
     );

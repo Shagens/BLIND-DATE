@@ -1,4 +1,4 @@
-.card {
+/* .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 30px;
@@ -35,4 +35,85 @@
   
   span {
     color: black;
+  } */
+  body {
+    background-color: #0F4C5C;
   }
+  #body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0F4C5C;
+    color: #E3E36A;
+  }
+  
+  .header h1 {
+    display: inline-block;
+    font-size: 48px;
+  }
+  
+  .header h1 .BlindDate {
+    color: #CBFF8C;
+  }
+  
+  .header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+  }
+  
+  .header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+  }
+  
+  .Contact-Me {
+    position: fixed;
+    /* left: 0; */
+    bottom: 0;
+    width: 100%;
+    background-color: #0F4C5C;
+    color: #E3E36A;
+    font-size: medium;
+    text-align: center
+    /* padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0F4C5C;
+    text-align: center; */
+  }
+  
+  /* .footer h2 {
+    font-size: 20px;
+  } */
+  
+  a {
+    color:#CBFF8C;
+    text-decoration: none;
+    display: center;
+    justify-content: space-around;
+    width: 30%;
+  }
+  
+  .Profile {
+    object-fit: contain;
+    height: 40px;
+    justify-content: center;
+  }
+
+  #footer {
+    margin-top: auto;
+  }
+
+  
