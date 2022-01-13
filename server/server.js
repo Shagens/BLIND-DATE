@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const Cards = require("./models/Cards");
 const dotenv = require("dotenv");
+const path = require('path');
 dotenv.config();
 
 // configure the app
@@ -24,7 +25,13 @@ mongoose.connect(process.env.connection_url, (err) => {
 
 // Endpoints
 
-app.get("/", (req, res) => res.status(200).send("Hello"));
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 app.post("/dating/cards", (req, res) => {
   const Card = req.body;
