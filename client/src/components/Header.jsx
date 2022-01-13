@@ -20,20 +20,34 @@
 
 // export default Header
 
-import React from 'react';
-import profile from "../assets/cupid-pic.jpg"
-import "./Header.css";
-export default function Header() {
-    return (
-        <header className='Header'>
-            <img src={profile} className="profile"/>
-            <nav className='Nav'>
-                <a href='/'>Profile</a>
-                <a href='/'>Log In</a>
-                <a href='/'>Matches</a>
-                <a href='/'>Settings</a>
-                <button>Logout</button>
+import React from "react"
+import "./Header.css"
+// import profile from "../assets/cupid-pic.jpg"
+function header (props) {
+    console.log(props)
+    return( 
+        <div class="header">
+        <h1>Cupids<span class="Blind Date">Blind Date</span></h1>
+        {/* <img src={profile} className="Profile"></img> */}
+        <nav>
+            <ul>
+                
+                <li>
+                    <a href="#" onClick={() => props.handlePageChange("Home")}> Home</a>
+                </li>
+                <li>
+                    <a href="#" onClick={() => props.handlePageChange("TinderCards")}>Profile</a>
+                </li>
+                <li>
+                    <a href="#" onClick={() => props.handlePageChange("Chat")}>Chat</a>
+                </li>
+                <li>
+                    <a href="#" onClick={() => props.handlePageChange("Signup")}>Signup</a>
+                </li>
+            </ul>
             </nav>
-        </header>
-    );
+        </div>
+    )
 }
+
+export default header;
